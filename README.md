@@ -5,9 +5,5 @@ The code is written in python, and all the plots are generated using jupyter not
 
 
 ## Fig. 1
-![figure1](/plots/plots_png/AxionLimits.png | width=100)
-
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
-
-<img src="https://cloud.githubusercontent.com/assets/yourgif.gif" width="400" height="790">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="50" height="50">
 
