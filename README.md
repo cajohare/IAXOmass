@@ -7,7 +7,7 @@ The code is written in python, and all the plots are generated using jupyter not
 
 
 ## Fig. 1
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="400" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="420" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
 
@@ -16,7 +16,7 @@ The axion parameter space g-m_a. The main result of this paper is shown as a blu
 ---
 
 ## Fig. 2
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="400" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="420" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
@@ -25,8 +25,8 @@ The Solar axion fluxes expected on Earth and their components due to g_ae and g_
 ---
 
 ## Fig. 3
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Photon.png" width="800" height="400">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Electron.png" width="800" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Photon.png" width="840" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Electron.png" width="840" height="400">
 
 [Click here for the notebook (upper panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_XraySpectra_Photon.ipynb)
 
@@ -35,3 +35,12 @@ The Solar axion fluxes expected on Earth and their components due to g_ae and g_
 X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected length of L=20 m. Displaying spectra for different values of the axion mass as well as for both the Solar axioelectron (upper panels) and Primakoff (lower panels) fluxes. The left hand panel in both cases show the underlying idealised spectra, whereas the right hand panels show the spectra after being convolved with a Gaussian of width E_0 = 100 eV. For comparison, we have normalised all spectra to one.
 
 ---
+
+## Fig. 4
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="420" height="400">
+
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="420" height="400">
+
+[Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
