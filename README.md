@@ -37,11 +37,11 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ---
 
 ## Fig. 4
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="420" height="400">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="200" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="200" height="200">
 
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="420" height="400">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="200" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="200" height="200">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
 
@@ -51,8 +51,8 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 
 ## Fig. 5
 
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="420" height="400">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="200" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">
 
 [Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
 [Click here for the notebook (right hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
@@ -61,7 +61,7 @@ Median discovery limits for determining a massive axion to 3\sigma, in terms of 
 
 ---
 
-## Fig. 5
+## Fig. 6
 
 <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassEstimation_Photon.png" width="420" height="400">
 
