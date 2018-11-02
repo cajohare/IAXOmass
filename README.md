@@ -58,10 +58,10 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
     <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">  </div>
 </div>
 
-<tr>
-<td> <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" alt="Drawing" style="width: 50px;"/> </td>
-<td> <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" alt="Drawing" style="width: 50px;"/> </td>
-</tr>
+<p float="left">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">
+</p>
 
 [Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
 
