@@ -5,5 +5,8 @@ The code is written in python, and all the plots are generated using jupyter not
 
 
 ## Fig. 1
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="50" height="50">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="200" height="200">
 
+
+## Fig. 1
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="200" height="200">
