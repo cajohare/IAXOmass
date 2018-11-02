@@ -7,20 +7,25 @@ The code is written in python, and all the plots are generated using jupyter not
 
 
 ## Fig. 1
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="200" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="400" height="400">
 
-[Jupyter notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
+[Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
+
 The axion parameter space g-m_a. The main result of this paper is shown as a blue region: the median range of masses and couplings for which IAXO can determine the axion mass to be non-zero with 3sigma significance. The QCD axion band is shaded in orange and the common benchmark KSVZ and DFSZ models are drawn as straight brown lines. In various shades of green are axions excluded by astrophysical arguments. The best experimental results shown in shades of red. All the limit data can be found in the 'limit_data' folder
 
 ---
 
 ## Fig. 2
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="200" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="400" height="400">
+
+[Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
+
+The Solar axion fluxes expected on Earth and their components due to g_ae and g_ag. The g_ag flux is analytic and can be found in AxionFuncs.py. The g_ae flux is tabulated in gaeflux.txt also found in the code folder.
 
 ---
 
 ## Fig. 3
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Photon.png" width="400" height="200">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Electron.png" width="400" height="200">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Photon.png" width="800" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Electron.png" width="800" height="400">
 
 ---
