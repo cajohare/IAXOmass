@@ -44,3 +44,27 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="420" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
+
+Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four input axion masses, where the cross section has been chosen to yield a 3$\sigma$ discrimination of the mass from m_a = 0. In each case we plot the difference between the likelihood value and the maximum likelihood, which since we are using Asimov data is always correctly located at the input parameter values (indicated by straight lines and a red marker). In the joint 2-dimensional likelihood we also show the 1 and 2 sigma enclosed red contours on both parameters. The equivalent regions are indicated as straight lines in the profile likelihood panels.
+
+---
+
+## Fig. 5
+
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="420" height="400">
+
+[Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
+[Click here for the notebook (right hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
+
+Median discovery limits for determining a massive axion to 3\sigma, in terms of the coupling to photons (left) and electrons (right). In each we shade from dark to light blue the discovery limits for increasing energy resolution. Also as a red and a green region we show the couplings already ruled out by CAST and horizontal branch stars. The lightest blue region shows the sensitivity of IAXO to exclude g_ag or g_ae. The black lines indicate lines in these spaces which give constant numbers of X-rays N_\gamma in IAXO.
+
+---
+
+## Fig. 5
+
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassEstimation_Photon.png" width="420" height="400">
+
+[Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassEstimation.ipynb)
+
+Limiting values of the axion-photon coupling that permit IAXO to measure the axion mass to within a given precision.
