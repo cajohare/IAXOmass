@@ -5,5 +5,5 @@ The code is written in python, and all the plots are generated using jupyter not
 
 
 ## Fig. 1
-![GitHub Logo](/plots/plots_png/AxionLimits.png=50x50)
+![GitHub Logo](/plots/plots_png/AxionLimits.png =50x50)
 
