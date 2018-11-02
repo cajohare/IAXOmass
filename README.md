@@ -39,13 +39,13 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ## Fig. 4
 
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="200" height="200">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="400" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="400" height="400">
 </p>
 
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="200" height="200">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="400" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="400" height="400">
 </p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
