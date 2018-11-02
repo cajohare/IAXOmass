@@ -37,11 +37,16 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ---
 
 ## Fig. 4
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="200" height="200">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="200" height="200">
 
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="200" height="200">
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="200" height="200">
+<p float="left">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="200" height="200">
+</p>
+
+<p float="left">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="200" height="200">
+</p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
 
@@ -51,15 +56,8 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 
 ## Fig. 5
 
-<div class="row">
-  <div class="column">
-    <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="200"    height="200">  </div>
-  <div class="column">
-    <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">  </div>
-</div>
-
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="200" height="200">
   <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="200" height="200">
 </p>
 
