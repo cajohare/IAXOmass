@@ -28,4 +28,10 @@ The Solar axion fluxes expected on Earth and their components due to g_ae and g_
 <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Photon.png" width="800" height="400">
 <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/XraySpectra_Electron.png" width="800" height="400">
 
+[Click here for the notebook (upper panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_XraySpectra_Photon.ipynb)
+
+[Click here for the notebook (lower panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_XraySpectra_Electron.ipynb)
+
+X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected length of L=20 m. Displaying spectra for different values of the axion mass as well as for both the Solar axioelectron (upper panels) and Primakoff (lower panels) fluxes. The left hand panel in both cases show the underlying idealised spectra, whereas the right hand panels show the spectra after being convolved with a Gaussian of width E_0 = 100 eV. For comparison, we have normalised all spectra to one.
+
 ---
