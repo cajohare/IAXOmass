@@ -1,9 +1,11 @@
 [![arXiv](https://img.shields.io/badge/arXiv-1807.09004-B31B1B.svg)](https://arxiv.org/abs/1807.09004) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 # IAXOmass
-Code for reproducing results from [arXiv:[1811.?????]](https://arxiv.org/abs/1807.09004) "*Weighing the Solar Axion*" on how IAXO can use the energy dependence of the X-ray spectrum from Solar axion conversion to measure the axion mass over a small range when the discrimination is not destroyed by oscillations.
+Code for reproducing results from [arXiv:[1811.?????]](https://arxiv.org/abs/1807.09004) "**Weighing the Solar Axion**" on how IAXO can use the energy dependence of the X-ray spectrum from Solar axion conversion to measure the axion mass over a small range when the discrimination is not destroyed by oscillations.
 
-The code is written in python, and all the plots are generated using jupyter notebooks. This repository contains all the code needed to reproduce the paper.
+The code is written in python, and all the plots are generated using jupyter notebooks. This repository contains all the code needed to reproduce the paper. Only major python requirement is the [`iminuit`](https://iminuit.readthedocs.io/en/latest/) package, although currently that bit of the code is unused in any of these results, but will be needed for future studies with more complicated likelihood functions to minimize. 
+
+Email me at ciaran.aj.ohare@gmail.com if you think anything is not as it should be, or you just wanna chat idk whatever
 
 ---
 
