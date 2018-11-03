@@ -69,7 +69,7 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 
 [Click here for the notebook (right hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
-Median discovery limits for determining a massive axion to $$3\sigma$$, in terms of the coupling to photons (left) and electrons (right). In each we shade from dark to light blue the discovery limits for increasing energy resolution. Also as a red and a green region we show the couplings already ruled out by CAST and horizontal branch stars. The lightest blue region shows the sensitivity of IAXO to exclude g_ag or g_ae. The black lines indicate lines in these spaces which give constant numbers of X-rays $$N_\gamma$$ in IAXO.
+Median discovery limits for determining a massive axion to 3\sigma, in terms of the coupling to photons (left) and electrons (right). In each we shade from dark to light blue the discovery limits for increasing energy resolution. Also as a red and a green region we show the couplings already ruled out by CAST and horizontal branch stars. The lightest blue region shows the sensitivity of IAXO to exclude g_ag or g_ae. The black lines indicate lines in these spaces which give constant numbers of X-rays N_\gamma in IAXO.
 
 ---
 
