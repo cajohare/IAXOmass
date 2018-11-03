@@ -97,6 +97,8 @@ def EnergyBins(E_min,E_max,nfine,nE_bins):
 def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',nfine=100,res_on=False): 
     nm = size(m_vals)
     R1_tab = zeros(shape=(nE_bins,nm))
+    Ei,E_bins = EnergyBins(E_min,E_max,nfine,nE_bins)
+    
     if coupling=='Electron':
         Flux = AxionFlux_Axioelectron(1e-10,Ei)
         dN_func = PhotonNumber_Electron
@@ -104,8 +106,7 @@ def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',nfine=1
         Flux = 1.0
         dN_func = PhotonNumber_Primakoff
         
-    # Tabulate m != 0 rates
-    Ei,E_bins = EnergyBins(E_min,E_max,nfine,nE_bins)
+    # Tabulate m != 0 rates    
     for j in range(0,nm):
         dN = dN_func(Flux,Ei,m_vals[j])  
         if res_on:
