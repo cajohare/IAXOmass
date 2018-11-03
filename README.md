@@ -16,7 +16,7 @@ Email me at ciaran.aj.ohare@gmail.com if you think anything is not as it should 
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
 
-The axion parameter space g-m_a. The main result of this paper is shown as a blue region: the median range of masses and couplings for which IAXO can determine the axion mass to be non-zero with 3sigma significance. The QCD axion band is shaded in orange and the common benchmark KSVZ and DFSZ models are drawn as straight brown lines. In various shades of green are axions excluded by astrophysical arguments. The best experimental results shown in shades of red. All the limit data can be found in the 'limit_data' folder
+The axion parameter space g-m_a. The main result of this paper is shown as a blue region: the median range of masses and couplings for which IAXO can determine the axion mass to be non-zero with 3sigma significance. The QCD axion band is shaded in orange and the common benchmark KSVZ and DFSZ models are drawn as straight brown lines. In various shades of green are axions excluded by astrophysical arguments. The best experimental results shown in shades of red. All the limit data can be found in the [limit_data](https://github.com/cajohare/IAXOmass/blob/master/limit_data) folder
 
 ---
 
@@ -25,7 +25,7 @@ The axion parameter space g-m_a. The main result of this paper is shown as a blu
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
-The Solar axion fluxes expected on Earth and their components due to g_ae and g_ag. The g_ag flux is analytic and can be found in AxionFuncs.py. The g_ae flux is tabulated in gaeflux.txt also found in the code folder.
+The Solar axion fluxes expected on Earth and their components due to g_ae and g_ag. The g_ag flux is analytic and can be found in AxionFuncs.py. The g_ae flux is tabulated in gaeflux.txt which can be downloaded [here](code/gaeflux.txt)
 
 ---
 
@@ -44,13 +44,13 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ## Fig. 4
 
 <p float="left">
-  <img src="plots/plots_png/Like0.png" width="440" height="380">
-  <img src="plots/plots_png/Like1.png" width="440" height="380">
+  <img src="plots/plots_png/Like0.png" width="250" height="300">
+  <img src="plots/plots_png/Like1.png" width="250" height="300">
 </p>
 
 <p float="left">
-  <img src="plots/plots_png/Like2.png" width="440" height="380">
-  <img src="plots/plots_png/Like3.png" width="440" height="380">
+  <img src="plots/plots_png/Like2.png" width="250" height="300">
+  <img src="plots/plots_png/Like3.png" width="250" height="300">
 </p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
@@ -62,8 +62,8 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 ## Fig. 5
 
 <p float="left">
-  <img src="plots/plots_png/MassDiscoveryLimit_Photon.png" width="440" height="400">
-  <img src="plots/plots_png/MassDiscoveryLimit_Electron.png" width="440" height="400">
+  <img src="plots/plots_png/MassDiscoveryLimit_Photon.png" width="250" height="300">
+  <img src="plots/plots_png/MassDiscoveryLimit_Electron.png" width="250" height="300">
 </p>
 
 [Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
@@ -79,6 +79,5 @@ Median discovery limits for determining a massive axion to 3\sigma, in terms of 
 <img src="plots/plots_png/MassEstimation_Photon.png" width="450" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassEstimation.ipynb)
-[Click here for the notebook](code/plot_MassEstimation.ipynb)
 
 Limiting values of the axion-photon coupling that permit IAXO to measure the axion mass to within a given precision.
