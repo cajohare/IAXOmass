@@ -11,7 +11,7 @@ Email me at ciaran.aj.ohare@gmail.com if you think anything is not as it should 
 
 
 ## Fig. 1
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="440" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
 
@@ -20,7 +20,7 @@ The axion parameter space g-m_a. The main result of this paper is shown as a blu
 ---
 
 ## Fig. 2
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/SolarAxionFlux.png" width="440" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
@@ -43,13 +43,13 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ## Fig. 4
 
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="400" height="400">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="400" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like0.png" width="440" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like1.png" width="440" height="400">
 </p>
 
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="400" height="400">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="400" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like2.png" width="440" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/Like3.png" width="440" height="400">
 </p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
@@ -61,8 +61,8 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 ## Fig. 5
 
 <p float="left">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="400" height="400">
-  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="400" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Photon.png" width="440" height="400">
+  <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassDiscoveryLimit_Electron.png" width="440" height="400">
 </p>
 
 [Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
@@ -75,7 +75,7 @@ Median discovery limits for determining a massive axion to 3\sigma, in terms of 
 
 ## Fig. 6
 
-<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassEstimation_Photon.png" width="420" height="400">
+<img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/MassEstimation_Photon.png" width="440" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassEstimation.ipynb)
 
