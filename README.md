@@ -12,7 +12,7 @@ Email me at ciaran.aj.ohare@gmail.com if you think anything is not as it should 
 
 ## Fig. 1
 <img src="https://github.com/cajohare/IAXOmass/blob/master/plots/plots_png/AxionLimits.png" width="480" height="400">
-<img src="https:cajohare.github.io/plots/plots_png/AxionLimits.png" width="480" height="400">
+<img src="plots/plots_png/AxionLimits.png" width="480" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_FinalLimit.ipynb)
 
