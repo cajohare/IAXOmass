@@ -43,13 +43,13 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ## Fig. 4
 
 <p float="left">
-  <img src="plots/plots_png/Like0.png" width="270" height="300">
-  <img src="plots/plots_png/Like1.png" width="270" height="300">
+  <img src="plots/plots_png/Like0.png" width="320" height="300">
+  <img src="plots/plots_png/Like1.png" width="320" height="300">
 </p>
 
 <p float="left">
-  <img src="plots/plots_png/Like2.png" width="270" height="300">
-  <img src="plots/plots_png/Like3.png" width="270" height="300">
+  <img src="plots/plots_png/Like2.png" width="320" height="300">
+  <img src="plots/plots_png/Like3.png" width="320" height="300">
 </p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
@@ -61,8 +61,8 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 ## Fig. 5
 
 <p float="left">
-  <img src="plots/plots_png/MassDiscoveryLimit_Photon.png" width="300" height="300">
-  <img src="plots/plots_png/MassDiscoveryLimit_Electron.png" width="300" height="300">
+  <img src="plots/plots_png/MassDiscoveryLimit_Photon.png" width="320" height="300">
+  <img src="plots/plots_png/MassDiscoveryLimit_Electron.png" width="320" height="300">
 </p>
 
 [Click here for the notebook (left hand panel)](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Photon.ipynb)
