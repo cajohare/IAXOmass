@@ -54,7 +54,7 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
 
-Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four input axion masses, where the cross section has been chosen to yield a 3$\sigma$ discrimination of the mass from m_a = 0. In each case we plot the difference between the likelihood value and the maximum likelihood, which since we are using Asimov data is always correctly located at the input parameter values (indicated by straight lines and a red marker). In the joint 2-dimensional likelihood we also show the 1 and 2 sigma enclosed red contours on both parameters. The equivalent regions are indicated as straight lines in the profile likelihood panels.
+Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four input axion masses, where the cross section has been chosen to yield a 3\sigma discrimination of the mass from m_a = 0. In each case we plot the difference between the likelihood value and the maximum likelihood, which since we are using Asimov data is always correctly located at the input parameter values (indicated by straight lines and a red marker). In the joint 2-dimensional likelihood we also show the 1 and 2 sigma enclosed red contours on both parameters. The equivalent regions are indicated as straight lines in the profile likelihood panels.
 
 ---
 
