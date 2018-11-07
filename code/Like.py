@@ -1,9 +1,16 @@
 #================================Like.py=======================================#
+# Written by C. O'Hare
 # Contains:
-# 2-D and 1-D profile likelihood functions for axion coupling and mass
-# Function that calculates mass discovery limits at 3 sigma using Asimov data
-# Function that calculates constant event number lines
-#
+# InterpExpectedEvents: convert tabulated data to data for arbitrary mass
+# lnPF: logarithm of poisson pdf
+# llhood2: -1*log-likelihood for params = (m_a,g)
+# llhood2_marg: profile likelihood for params = (m_a)
+# llhood2_marg0: value of llhood2_marg at m_a=0
+# llhood1: massless model likelihood params = (g)
+# ConstantObsNumberLine: constant event number lines
+# MassDiscoveryLimit_Simple: analytic median mass discovery limit
+# MassDiscoveryLimit_Minuit: numerical median mass discovery limit
+# MassEstimationDiscoveryLimit: numerical median mass estimation limit
 #==============================================================================#
 
 
@@ -25,6 +32,8 @@ def InterpExpectedEvents(g,m,m_vals,R1_tab):
     N_exp = 1e40*(g**4.0)*((R1_tab[:,i1]*(m_vals[i2]-m)+R1_tab[:,i2]*(m - m_vals[i1]))/(m_vals[i2]- m_vals[i1]))
     return N_exp
 #==============================================================================#
+
+
 
 
 #==============================================================================#
@@ -195,11 +204,26 @@ def MassEstimationDiscoveryLimit(err,m_vals,R0,R1_tab,m_DL_vals,sigmas=2,gmin_va
 
 
 
+
+
+
+
+#==============================================================================#
+#==============================================================================#
+#==============================================================================#
+#==============================================================================#
+#==============================================================================#
+
+
+# OLD CODE:
+
 #==============================================================================#
 # Given an input mass and coupling (m0,g0), calculates the confidence interval
 # around the best fit mass to a given significance level (sigmas)
 # also requires err_l and err_u which is roughly the fractional size over which
 # to search (needs to be very large ~100% for most values of m0)
+# This function currently not quite extensive enough to give accurate results
+# Unless one requires err<0.01
 def MassMeasurement(m0,g0,err_l,err_u,sigmas,m_vals,R1_tab,nL=100): 
     nm = size(m_vals)
     mlim = []
@@ -222,20 +246,6 @@ def MassMeasurement(m0,g0,err_l,err_u,sigmas,m_vals,R1_tab,nL=100):
     return mlim
 #==============================================================================#
 
-
-
-
-
-
-
-#==============================================================================#
-#==============================================================================#
-#==============================================================================#
-#==============================================================================#
-#==============================================================================#
-
-
-# OLD CODE:
 
 #==============================================================================#
 # Old way of calculating the Mass estimate discovery limit, currently it fails 

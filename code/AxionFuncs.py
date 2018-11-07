@@ -1,4 +1,5 @@
 #================================AxionFuncs.py=================================#
+# Written by C. O'Hare
 # Contains:
 # Functions for calculating Solar Axion fluxes for photon & electron coupling
 # Functions for calculating X-ray spectra in a haloscope
@@ -14,16 +15,20 @@ from scipy.integrate import cumtrapz, quad
 
 #==============================================================================#
 def AxionFlux_Primakoff(gag,E):
+    # Parameterised differential Axion Flux in [cm^-1 s^-1 keV^-1]
+    # gag = Axion-photon coupling in GeV^-1
+    # E = Axion/X-ray energy in keV
     norm = 6.02e10*(gag/1e-10)**2.0
     return norm*((E**2.481)/exp(E/1.205))
 
 def AxionFlux_Axioelectron(gae,E):
-    #Solar differential Axion Flux from the axion electron coupling
-    #column 1 = Energy [keV]
-    #column 2 = Axion Flux 1/[10^19 keV cm^2 day]
-    #I calculated the flux using gae = 0.511*10^-10 
-    #for other values of gae use:
-    #FLUX = Table*[gae/(0.511*10^-10)]^2
+    # Differential Axion Flux from the axion electron coupling
+    # Flux = AxionRecomb+Compton+Bremsstrahlung
+    # column 1 = Energy [keV]
+    # column 2 = Axion Flux 1/[10^19 keV cm^2 day]
+    # Output: flux in cm^-1 s^-1 keV^-1
+    # gae = Axion-electron coupling in GeV^-1
+    # E = Axion/Xray energy in keV
     data = loadtxt('gaeflux.txt')
     E1 = data[:,0]
     F1 = data[:,1]
@@ -32,10 +37,12 @@ def AxionFlux_Axioelectron(gae,E):
     return Flux
 
 def AxionFlux_Compton(gae,E):
+    # Parameterised Compton axion flux (unused in paper)
     norm = 13.314e6*(gae/1e-13)**2.0
     return norm*((E**2.987)/exp(E*0.776))
 
 def AxionFlux_Brem(gae,E):
+    # Parameterised Bremsstrahlung axion flux (unused in paper)
     norm = 26.311e8*(gae/1e-13)**2.0
     return norm*E*exp(-0.77*E)/(1+0.667*E**1.278)
 
@@ -45,10 +52,18 @@ def AxionFlux_Brem(gae,E):
 
 #==============================================================================#
 def PhotonNumber_Primakoff(Flux_scale,E,m_a):
+    # differential Xray count dN/dE (in keV^-1) for axionphoton flux
+    # (Optional) Flux_scale = scaling for normalisation (set to 1 for units used in paper)
+    # E = Xray energy (keV)
+    # m_a = axion mass (eV)
     norm = Flux_scale*220893
     return norm*((E**2.481)/exp(E/1.205))*(sinc(25380.710659898483/pi*m_a**2.0/E))**2.0
 
 def PhotonNumber_Electron(Flux,E,m_a):
+    # differential Xray count dN/dE (in keV^-1) for axionelectron flux
+    # (Optional) Flux_scale = scaling for normalisation (set to 1 for units used in paper)
+    # E = Xray energy (keV)
+    # m_a = axion mass (eV)
     norm = 220893/(6.02e10)
     return norm*Flux*(sinc(25380.710659898483/pi*m_a**2.0/E))**2.0
 #==============================================================================#
@@ -56,15 +71,21 @@ def PhotonNumber_Electron(Flux,E,m_a):
 
 #==============================================================================#
 def smear(dN,E,E_res):
+    # Smear spectrum dN(E) by energy resolution Eres
+    # dN = spectrum (arbitrary units)
+    # E = Energies defining dN
+    # E_res = Energy resolution to smear by
     n = size(dN)
     Norm = 1.0/sqrt(2*pi*E_res**2.0)
     dN_smeared = zeros(shape=n)
     for i in range(0,n):
+        # Each new energy is the full spectrum convolved by a gaussian
         K = Norm*exp(-(E-E[i])**2.0/(2*E_res**2.0))
         dN_smeared[i] = trapz(K*dN,E)
     return dN_smeared
 
 def smearFast(dN,E,E_res):
+    # Does the same as 'smear' but is faster and less accurate for E_res>100 eV
     n = size(dN)
     dE = E[1]-E[0]
     irange = int(3*E_res/dE)
@@ -84,6 +105,11 @@ def smearFast(dN,E,E_res):
 
 #==============================================================================#
 def EnergyBins(E_min,E_max,nfine,nE_bins):
+    # Define energy array for doing the trapz integration below
+    # E_min = energy threshold
+    # E_max = max energy
+    # nfine = number of energies within one bin to integrate over
+    # nE_bins = number of energy bins between E_min and E_max
     E_bin_edges = linspace(E_min,E_max,nE_bins+1)
     E_bw = (E_max-E_min)/(nE_bins+1.0)
     E_bins = (E_bin_edges[1:]+E_bin_edges[:-1])/2
@@ -95,6 +121,17 @@ def EnergyBins(E_min,E_max,nfine,nE_bins):
     return Ei,E_bins
 
 def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',nfine=100,res_on=False): 
+    # Generate tabulated values of data for a range of axion masses 
+    # OUTPUT: R1_tab = Tabulated values of the binned Xray counts (columns) vs axion mass (rows)
+    # R0 = massless data
+    # E_bins = centers of energy bins
+    # INPUT: m_vals = masses to add to the tabulation 
+    # E_min = threshold energy (also resolution if res_on=True)
+    # E_max = maximum energy
+    # nE_bins = number of energy bins
+    # coupling = 'Photon' or 'Electron' for g_ag or g_ae
+    # nfine = number of points to integrate over within one bin (controls accuracy)
+    # res_on = True/False, whether to do energy resolution integral or not
     nm = size(m_vals)
     R1_tab = zeros(shape=(nE_bins,nm))
     Ei,E_bins = EnergyBins(E_min,E_max,nfine,nE_bins)
