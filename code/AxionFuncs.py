@@ -51,21 +51,37 @@ def AxionFlux_Brem(gae,E):
 
 
 #==============================================================================#
-def PhotonNumber_Primakoff(Flux_scale,E,m_a):
+def PhotonNumber_Primakoff(Flux_scale,E,m_a,\
+                           Bfield=2.5,Exposure=1.5,Length=20.0,\
+                           N_bores=8,BoreDiameter=60.0,eps_D=0.7,eps_T=0.8):
     # differential Xray count dN/dE (in keV^-1) for axionphoton flux
     # (Optional) Flux_scale = scaling for normalisation (set to 1 for units used in paper)
     # E = Xray energy (keV)
     # m_a = axion mass (eV)
-    norm = Flux_scale*220893
-    return norm*((E**2.481)/exp(E/1.205))*(sinc(25380.710659898483/pi*m_a**2.0/E))**2.0
+    norm,normq = NgammaNorm(Bfield,Exposure,Length,N_bores,BoreDiameter,eps_D,eps_T)
+    norm = Flux_scale*norm
+    return norm*((E**2.481)/exp(E/1.205))*(sinc(normq/pi*m_a**2.0/E))**2.0  # keV^-1
 
-def PhotonNumber_Electron(Flux,E,m_a):
+def PhotonNumber_Electron(Flux,E,m_a,\
+                           Bfield=2.5,Exposure=1.5,Length=20.0,\
+                           N_bores=8,BoreDiameter=60.0,eps_D=0.7,eps_T=0.8):
     # differential Xray count dN/dE (in keV^-1) for axionelectron flux
-    # (Optional) Flux_scale = scaling for normalisation (set to 1 for units used in paper)
+    # Flux_scale = scaling for normalisation (set to 1 for units used in paper)
     # E = Xray energy (keV)
     # m_a = axion mass (eV)
-    norm = 220893/(6.02e10)
-    return norm*Flux*(sinc(25380.710659898483/pi*m_a**2.0/E))**2.0
+    norm,normq = NgammaNorm(Bfield,Exposure,Length,N_bores,BoreDiameter,eps_D,eps_T)
+    norm = norm/(6.02e10)
+    return norm*Flux*(sinc(normq/pi*m_a**2.0/E))**2.0 # keV^-1
+
+def NgammaNorm(Bfield,Exposure,Length,N_bores,BoreDiameter,eps_D,eps_T):
+    # Nnorm = normalisation of overall photon number to get it in keV^-1 and constant that enters into t
+    S_cm = N_bores*pi*(BoreDiameter/2.0)**2.0 # cm^2
+    L_eV = Length/1.97e-7 # eV^-1
+    t_secs = Exposure*3600*24*365 # s
+    B = Bfield*(1e-19*195)
+    norm = 6.02e10*t_secs*S_cm*eps_D*eps_T*(B*L_eV/2.0)**2.0
+    normq = L_eV/(4*1000)
+    return norm,normq
 #==============================================================================#
 
 
@@ -120,7 +136,10 @@ def EnergyBins(E_min,E_max,nfine,nE_bins):
         
     return Ei,E_bins
 
-def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',nfine=100,res_on=False): 
+def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',\
+                            nfine=100,res_on=False,\
+                           Bfield=2.5,Exposure=1.5,Length=20.0,\
+                           N_bores=8,BoreDiameter=60.0,eps_D=0.7,eps_T=0.8): 
     # Generate tabulated values of data for a range of axion masses 
     # OUTPUT: R1_tab = Tabulated values of the binned Xray counts (columns) vs axion mass (rows)
     # R0 = massless data
@@ -145,7 +164,9 @@ def BinnedPhotonNumberTable(m_vals,E_min,E_max,nE_bins,coupling='Photon',nfine=1
         
     # Tabulate m != 0 rates    
     for j in range(0,nm):
-        dN = dN_func(Flux,Ei,m_vals[j])  
+        dN = dN_func(Flux,Ei,m_vals[j],\
+                     Bfield,Exposure,Length,\
+                     N_bores,BoreDiameter,eps_D,eps_T)  
         if res_on:
             dN = smear(dN,Ei,E_min)
         for i in range(0,nE_bins):
