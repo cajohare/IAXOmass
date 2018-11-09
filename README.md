@@ -80,3 +80,13 @@ Median discovery limits for determining a massive axion to 3\sigma, in terms of 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassEstimation.ipynb)
 
 Limiting values of the axion-photon coupling that permit IAXO to measure the axion mass to within a given precision.
+
+---
+
+## Bonus figure: babyIAXO sensitivity
+
+<img src="plots/plots_png/MassDiscoveryLimit_babyIAXO.png" width="450" height="400">
+
+[Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/babyIAXO.ipynb)
+
+Same as figure 5 but comparing the IAXO mass discovery limit with the result from babyIAXO (which will have 1 magnet bore of half the length).
