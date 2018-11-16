@@ -20,7 +20,7 @@ The axion parameter space g-m_a. The main result of this paper is shown as a blu
 ---
 
 ## Fig. 2
-<img src="plots/plots_png/SolarAxionFlux.png" width="480" height="400">
+<img src="plots/plots_png/SolarAxionFlux.png" width="470" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
