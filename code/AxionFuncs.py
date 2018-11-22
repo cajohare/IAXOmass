@@ -15,7 +15,7 @@ from scipy.integrate import cumtrapz, quad
 
 #==============================================================================#
 def AxionFlux_Primakoff(gag,E):
-    # Parameterised differential Axion Flux in [cm^-1 s^-1 keV^-1]
+    # Parameterised differential Axion Flux in [m^-1 yr^-1 keV^-1]
     # gag = Axion-photon coupling in GeV^-1
     # E = Axion/X-ray energy in keV
     norm = 6.02e10*(gag/1e-10)**2.0
