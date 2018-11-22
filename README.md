@@ -41,6 +41,13 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ---
 
 ## Fig. 4
+<img src="plots/plots_png/AsimovMC_comparison.png" width="850" height="400">
+
+[Click here for the notebook (upper panel)](https://github.com/cajohare/IAXOmass/blob/master/code/AsimovMC_comparison.ipynb)
+
+---
+
+## Fig. 5
 
 <p float="left">
   <img src="plots/plots_png/Like0.png" width="320" height="300">
@@ -58,7 +65,7 @@ Joint 2-dimensional likelihood and profile 1-dimensional likelihoods for four in
 
 ---
 
-## Fig. 5
+## Fig. 6
 
 <p float="left">
   <img src="plots/plots_png/MassDiscoveryLimit_Photon.png" width="320" height="300">
@@ -73,7 +80,7 @@ Median discovery limits for determining a massive axion to 3\sigma, in terms of 
 
 ---
 
-## Fig. 6
+## Fig. 7
 
 <img src="plots/plots_png/MassEstimation_Photon.png" width="450" height="400">
 
