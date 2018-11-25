@@ -20,7 +20,7 @@ The axion parameter space g-m_a. The main result of this paper is shown as a blu
 ---
 
 ## Fig. 2
-<img src="plots/plots_png/SolarAxionFlux.png" width="470" height="400">
+<img src="plots/plots_png/SolarAxionFlux.png" width="480" height="400">
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_MassDiscovery_Electron.ipynb)
 
@@ -44,6 +44,8 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 <img src="plots/plots_png/AsimovMC_comparison.png" width="400" height="200">
 
 [Click here for the notebook (upper panel)](https://github.com/cajohare/IAXOmass/blob/master/code/AsimovMC_comparison.ipynb)
+
+Plot comparing the asimov and monte carlo result.
 
 ---
 
