@@ -52,13 +52,13 @@ Plot comparing the asimov and monte carlo result.
 ## Fig. 5
 
 <p float="left">
-  <img src="plots/plots_png/Like0.png" width="320" height="300">
-  <img src="plots/plots_png/Like1.png" width="320" height="300">
+  <img src="plots/plots_png/Like0.png" width="330" height="300">
+  <img src="plots/plots_png/Like1.png" width="330" height="300">
 </p>
 
 <p float="left">
-  <img src="plots/plots_png/Like2.png" width="320" height="300">
-  <img src="plots/plots_png/Like3.png" width="320" height="300">
+  <img src="plots/plots_png/Like2.png" width="330" height="300">
+  <img src="plots/plots_png/Like3.png" width="330" height="300">
 </p>
 
 [Click here for the notebook](https://github.com/cajohare/IAXOmass/blob/master/code/plot_Like.ipynb)
