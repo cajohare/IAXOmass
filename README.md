@@ -41,7 +41,7 @@ X-ray spectrum from Solar axion conversion in 2.5 T magnet with a projected leng
 ---
 
 ## Fig. 4
-<img src="plots/plots_png/AsimovMC_comparison.png" width="400" height="200">
+<img src="plots/plots_png/AsimovMC_comparison.png" width="420" height="200">
 
 [Click here for the notebook (upper panel)](https://github.com/cajohare/IAXOmass/blob/master/code/AsimovMC_comparison.ipynb)
 
